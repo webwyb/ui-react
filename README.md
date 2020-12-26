@@ -165,4 +165,4 @@ npm run test
 - [x] 快速新建组件文件夹
 - [x] 按需引入
 - [x] 单元测试
-- [ ] 组件埋点
+- [ ] 组件埋点 // "husky": { // "hooks": { // "commit-msg": "commitlint -E HUSKY_GIT_PARAMS", // "pre-commit": "lint-staged" // } // },
