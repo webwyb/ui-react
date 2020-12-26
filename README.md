@@ -70,7 +70,7 @@ or
 npm run build
 ```
 
-说明：打包的时候会出现 antd 依赖循环引用的报错: https://github.com/ant-design/ant-design/pull/23800 已有 pr 但是截止 2020.12.09 的最新 4.9.2 版本并没有解决这个问题
+说明：打包的时候会出现 antd 依赖循环引用的报错: https://github.com/ant-design/ant-design/pull/23800
 
 ## 六、发布前准备
 
@@ -111,16 +111,16 @@ tips: rollup 打包已经实现按需引入，无需引入插件
 安装 npm 包
 
 ```
-yarn add sum-react
+yarn add cyp-ui-react
 or
-npm install sum-react
+npm install cyp-ui-react
 ```
 
 组件里使用
 
 ```
 import React from 'react';
-import { BaseButton, BaseModal } from 'sum-react'
+import { BaseButton, BaseModal } from 'cyp-ui-react'
 
 function App() {
   const [visible, setVisible] = React.useState(false);
@@ -156,13 +156,3 @@ yarn test
 or
 npm run test
 ```
-
-## 九、TODO
-
-- [x] 文档示例
-- [x] 更改日志
-- [x] 文档部署
-- [x] 快速新建组件文件夹
-- [x] 按需引入
-- [x] 单元测试
-- [ ] 组件埋点 // "husky": { // "hooks": { // "commit-msg": "commitlint -E HUSKY_GIT_PARAMS", // "pre-commit": "lint-staged" // } // },
