@@ -1,0 +1,28 @@
+.tab {
+  label {
+    height: 22px;
+    margin: 0;
+    margin-right: 24px;
+    padding: 0 8px;
+    line-height: 22px;
+    border: 0;
+    border-radius: 4px;
+  }
+  label::before {
+    width: 0;
+    background-color: white;
+  }
+}
+&.custom_tab {
+  .ant-form-item {
+    margin-bottom: 0;
+    .ant-form-item-label {
+      line-height: 22px;
+    }
+  }
+  .tab {
+    label {
+      margin-bottom: 15px;
+    }
+  }
+}
