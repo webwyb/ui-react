@@ -7,6 +7,7 @@
   "main": "./lib/index.js",
   "module": "./lib/es/index.js",
   "scripts": {
+    "new": "yarn plop",
     "doc": "styleguidist server",
     "build": "rimraf lib && cross-env NODE_ENV=production rollup -c",
     "build:watch": "rimraf lib && cross-env NODE_ENV=development rollup -c -w",
